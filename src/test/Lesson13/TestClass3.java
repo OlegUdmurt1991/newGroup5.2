@@ -5,6 +5,7 @@ public class TestClass3 {
     {
         //Здесь так же не инициализируется значение
     }
+
     TestClass3 () {   //Конструктор
         value = 15;
     }
