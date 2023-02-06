@@ -1,4 +1,4 @@
-package HW.Lesson47.Five;
+package HW.Lesson47.Task5;
 
 /*Реализуйте класс Calculator со статическими методами:
 - int add(int x, int y) - выполнение x + y

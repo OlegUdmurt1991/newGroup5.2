@@ -32,9 +32,5 @@ public class Four {
             randomNum = nextInt(n - 1) + 1;
 
         }
-
-//            System.out.println(nextInt(3));
-
-
     }
 }
