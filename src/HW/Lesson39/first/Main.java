@@ -5,11 +5,17 @@ package HW.Lesson39.first;
 public class Main {
     public static void main(String[] args) {
         //Создаем три объекта класса Cat, и присваиваем им значения из разных конструкторов
-        Cat Cat1 = new Cat(5, " Зеленые ", 4.5, " Черно белый ");
-        System.out.println(Cat1);
-        Cat Cat2 = new Cat("Зеленые");
-        System.out.println(Cat2);
-        Cat Cat3 = new Cat(3.8);
-        System.out.println(Cat3);
+        Cat cat1 = new Cat(5, " Зеленые ", 4.5, " Черно белый ");
+        System.out.println(cat1);
+        Cat cat2 = new Cat("Зеленые");
+        System.out.println(cat2);
+        Cat cat3 = new Cat(3.8);
+        System.out.println(cat3);
+        Cat cat4 = new Cat(3);
+        System.out.println(cat4);
+        Cat cat5 = new Cat("Синие" , "Белый");
+        System.out.println(cat5);
+        Cat cat6 = new Cat(2.9, "Голубые");
+        System.out.println(cat6);
     }
 }

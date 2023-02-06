@@ -35,6 +35,7 @@ public class Second {
                 break;
             default:
                 System.out.println("Ошибка");
+                break;
         }
     }
 }

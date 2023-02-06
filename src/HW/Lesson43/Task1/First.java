@@ -10,11 +10,11 @@ public class First {
         int b = Integer.parseInt(args[1]);//В программу через аргументы командной строки передаются три целых числа: b.
         int c = Integer.parseInt(args[2]);//В программу через аргументы командной строки передаются три целых числа: c.
         if (a >= b && a >= c) {
-            System.out.println("Число а самое большое: " + a);
+            System.out.println("Число " + a + " самое большое");
         } else if (b >= a && b >= c) {
-            System.out.println("Число b самое большое: " + b);
+            System.out.println("Число " + b + " самое большое");
         } else {
-            System.out.println("Число c самое большое: " + c);
+            System.out.println("Число " + c + " самое большое");
         }
     }
 }

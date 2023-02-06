@@ -11,6 +11,7 @@ public class Task4 {
         double P = Double.parseDouble(args[0]);
         double r = Double.parseDouble(args[1]);
         double t = Double.parseDouble(args[2]);
-        System.out.println("Дано: P = " + P + ", r = " + r + ", t = " + t + '\n' + P * Math.exp(r * t));
+        System.out.println("Дано: P = " + P + ", r = " + r + ", t = " + t + '\n'
+                + P * Math.exp((r/100) * t));
     }
 }

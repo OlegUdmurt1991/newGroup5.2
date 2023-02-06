@@ -17,10 +17,14 @@ public class Main {
         Summa secondExe = new Summa();
         System.out.println("Второе задание " + secondExe.sum(2,6,8));
         Summa thirdExe = new Summa();
-        System.out.println("Третье задание " + thirdExe.sum(5,5,2.3));
+        System.out.println("Третье задание " + thirdExe.sum(5.5,2.3));
         Summa fourthExe = new Summa();
-        System.out.println("Четвертое задание " + fourthExe.sum(6,5.7,6.1));
+        System.out.println("Четвертое задание " + fourthExe.sum(5.1,2.2,4.4));
         Summa fiveExe = new Summa();
-        System.out.println("Пятое задание " + fiveExe.sum(66,24));
+        System.out.println("Пятое задание " + fiveExe.sum(6,5.7,6.1));
+        Summa sixExe = new Summa();
+        int x  = 15;
+        int y = 10;
+        System.out.println("Шестое задание " + sixExe.sum(Integer.valueOf(x),Integer.valueOf(y)));
     }
 }
