@@ -23,18 +23,30 @@ col - количество цифр в одной строке
 и завершите программу.*/
 public class Third {
 
-    static void snakePrint(int n, int col) {  //80 5
-        if (n < 1 || col < 0) {
-            System.out.println("Ошибка ");
+    public static void snakePrint(int n, int col) {
+        if (n < 1 || col <= 0) {
+            System.out.println("Ошибка");
+            return;
         }
-        for (int i = 0; i < n; i++) {
-            if (i % col == 0) {
-                System.out.print('\n');
+/*Вычисляем, сколько строк получится*/
+        int rows = (int) Math.ceil((double) n / col);
+        /*в цикле проверяем что i(номер строки) меньше общего количества строк*/
+        for (int i = 0; i < rows; i++) {
+            /*проверяем на четность строку*/
+            if (i % 2 == 0) {
+                /*цикл с пока j(напечатаная цифра) меньше номера строки помноженого на количество строк*/
+                for (int j = i * col + 1; j <= (i + 1) * col && j <= n; j++) {
+                    System.out.print(j + " ");
+                }
+            } else {
+                /*цикл с пока j(напечатаная цифра) больше номера строки помноженого на количество строк*/
+                for (int j = (i + 1) * col; j > i * col && j <= n; j--) {
+                    System.out.print(j + " ");
+                }
             }
-            System.out.print(i + " ");
+            System.out.println();
         }
     }
-
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]); //максимальное число
         int col = Integer.parseInt(args[1]); //количество цифр в одной строке

@@ -66,7 +66,7 @@ public class Calculator {
                 break;
             default:
                 System.out.println("Программа может только +, -, *, /");
-                break;
+                System.exit(0);
         }
     }
 }
