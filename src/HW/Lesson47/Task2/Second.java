@@ -24,15 +24,15 @@ public class Second {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]); // Количество сенокосилок
         int m = Integer.parseInt(args[1]); // Количество часов
-        int minutes = 0; // Минуты
-        for (int i = 0; i != n; i++) {
-            m = m + 1;
-            minutes = minutes + 10;
-            if (minutes == 60) {
-                minutes = 0;
-                m = m + 1;
+        m = m * 60; // Минуты
+        int sum = 0;
+        if (n >= 0) {
+            for (int i = 1; i <= n; i++, m = m + 10) {
+                sum = sum + m;
             }
-            System.out.println("Бригада работала " + m + " часов " + minutes + " минут");
+            System.out.println("Бригада работала " + sum / 60 + " часов " + sum % 60 + " минут");
+        } else {
+            System.out.println("Ошибка");
         }
     }
 }
