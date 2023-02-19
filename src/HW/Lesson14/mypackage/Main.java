@@ -1,5 +1,5 @@
 package HW.Lesson14.mypackage;
-import HW.Lesson14.mypackage.cars.Car;
+//import HW.Lesson14.mypackage.cars.Car;
 /*2: Создайте класс Main в пакете mypackage и другой класс Car в пакете mypackage.cars со статическим методом move().
 Вызовите статический метод из класса в пакете mypackage, используя различные возможности импорта.
 Все варианты записать в текстовый файл в формате:
@@ -39,7 +39,7 @@ public class Main {
     public static void main(String[] args) {
 //        Lesson14.mypackage.cars.Car first = new Lesson14.mypackage.cars.Car ();
         {
-            Car.move("four");
+          //  Car.move("four");
         }
     }
 }
