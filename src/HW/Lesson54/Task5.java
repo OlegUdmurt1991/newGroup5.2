@@ -1,31 +1,56 @@
 package HW.Lesson54;
 
+/**
+  Напишите метод "static boolean isInteger(String str)", который получает на вход строку и возвращает true,
+  если строка str состоит только из цифр.
+  <p>
+  С использованием этого метода напишите программу,
+  которая проверяет является ли строка, переданная через аргументы командной строки, целым числом,
+  и выводит результат проверки.
+  <p>
+  Проверку на наличие аргументов делать не надо.
+  Например:
+  1)
+  Входная строка: "1234567890"
+  Вывод: Строка является целым числом
+  <p>
+  2)
+  Входная строка: "1,234E567890"
+  Вывод: Строка не является целым числом
+ */
 public class Task5 {
-    static boolean isInteger(String str) {
-        StringBuilder sb = new StringBuilder(str);
-        for (int i = 0; i < sb.length(); i++) {
-            /***/
-            if (Character.isDigit(sb.charAt(i))) {
-                return false;
-            }
-        }
-        return true;
-    }
-    public static void print(String[] arg){
-        if (arg.length == 1) {
-            String str = arg[0];
-            if (isInteger(str)) {
-                System.out.println("Строка является целым числом");
-            } else {
-                System.out.println("Строка не является целым числом");
-            }
-        } else {
-            System.out.println("Неверное количество аргументов");
-        }
+    /**
+     * Создаем статичную переменную, на которую позже будет ссылаться созданый аргумент
+     */
+    static String str;
 
+    /**
+     * метод проверяет, является ли строка, переданная через аргументы командной строки, целым числом
+     */
+    static boolean isInteger(String str) {
+        for (int i = 0; i < str.length(); i++) {
+/**Метод Character. isDigit() – определяет, является ли указанное значение типа char цифрой.*/
+            if (!Character.isDigit(str.charAt(i))) {
+                System.out.println("Входная строка: " + str + '\n' + " Вывод: Строка является НЕ целым числом");
+                return false; // Если символ не является цифрой, то возвращаем false
+            }
+            /** Если дошли до конца строки и не вернули false, значит строка состоит только из цифр*/
+        }
+/**Создаем массив char-ов, а метод toCharArray() возвращает массив символов char[]*/
+        char[] digitArray = str.toCharArray();
+        for (int j = 0; j < digitArray.length; j++) {
+            if (digitArray[j] % 1 == 0) {
+                System.out.println("Входная строка: " + str + '\n' + " Вывод: Строка является целым числом");
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void main(String[] args) {
-        isInteger(args[0]);
+        /**Переменной из класса присваеваем значение аргумента*/
+        str = args[0];
+        isInteger(str);
+
     }
 }
