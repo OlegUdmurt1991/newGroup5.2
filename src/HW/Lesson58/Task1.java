@@ -11,7 +11,7 @@ package HW.Lesson58;
 import java.util.Random;
 
 public class Task1 {
-    public static void fillArray(int[] a) {
+    public static void print(int[] a) {
 /**Создаем объект класса Random*/
         Random random = new Random();
         for (int i = 0; i < a.length; i++) {
@@ -25,6 +25,6 @@ public class Task1 {
         /**Создаем массив целых чисел размером 20 элементов.*/
         int[] a = new int[20];
         /**Вызов метода*/
-        fillArray(a);
+        print(a);
     }
 }
