@@ -33,7 +33,7 @@ public class Task5 {
         sortJaggedArray(jaggedArray);
 
         /**вывод массива после сортировки*/
-        System.out.println("Массив после сортировки:");
+        System.out.println("Массив: ");
         /**пока i меньше ммакс. количества строк*/
         for (int i = 0; i < maxRows; i++) {
             System.out.println(Arrays.toString(jaggedArray[i]));
@@ -61,7 +61,12 @@ public class Task5 {
     private static void sortJaggedArray(int[][] jaggedArray) {
 /**Arrays.sort это метод который используется для сортировки массивов.
  * а лямбда выражение принимает параметры a и b b и сравнивает их суммы*/
-        Arrays.sort(jaggedArray, (a, b) -> Integer.compare(getSum(b), getSum(a)));
+        Arrays.sort(jaggedArray, (a, b) -> {
+            int x = getSum(b);
+            int y = getSum(a);
+            return (x<y)?-1:((x==y)?0:1);
+                });
+
     }
 
     public static void main(String[] args) {
