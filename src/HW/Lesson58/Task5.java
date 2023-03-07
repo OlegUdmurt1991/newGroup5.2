@@ -17,7 +17,7 @@ public class Task5 {
         int[][] jaggedArray = new int[maxRows][];
         Random random = new Random();
         /** заполнение массива случайными числами*/
-        /** пока i меньше количества строк*/
+        /** пока i меньше длины строки подмассива*/
         for (int i = 0; i < jaggedArray.length; i++) {
             /**переменная которая указывает на количество значений в строке(колонок)*/
             int cols = random.nextInt(maxCols) + 1;
@@ -60,10 +60,12 @@ public class Task5 {
      */
     private static void sortJaggedArray(int[][] jaggedArray) {
 /**Arrays.sort это метод который используется для сортировки массивов.
- * а лямбда выражение принимает параметры a и b b и сравнивает их суммы*/
+ * а лямбда выражение принимает параметры a(сумма элементов массива) и b(сумма элементов массива)
+ * и сравнивает их суммы*/
         Arrays.sort(jaggedArray, (a, b) -> {
-            int x = getSum(b);
-            int y = getSum(a);
+            int x = getSum(a);
+            int y = getSum(b);
+            /**Проводим сортировку массива в порядке убывания сумм элементов массива.*/
             return (x<y)?-1:((x==y)?0:1);
                 });
 
