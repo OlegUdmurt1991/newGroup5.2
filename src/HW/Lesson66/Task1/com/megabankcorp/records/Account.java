@@ -52,20 +52,11 @@ public class Account {
     /**
      * поле для текущего номера счета
      */
-    private long accountNumber;
+    private long moneySender;
     /**
      * поле для номера клиента банка
      */
-    private long clientNumber;
-
-    /**
-     * Создаем констркуктор с копиями наших переменных и получиаем доступ к переменным(копиям)
-     */
-    public Account(BigDecimal balance, long accountNumber, long clientNumber) {
-        this.balance = balance;
-        this.accountNumber = accountNumber;
-        this.clientNumber = clientNumber;
-    }
+    private long moneyRecipient;
 
     /**
      * гетер получает значение переменной(копии)
@@ -75,37 +66,16 @@ public class Account {
     }
 
     /**
-     * Принимает новое значение переменной ,но приэтом старое значение вызвать с помощью get
-     */
-    public void setBalance(BigDecimal balance) {
-        this.balance = balance;
-    }
-
-    /**
      * гетер получает значение переменной(копии)
      */
     public long getAccountNumber() {
-        return accountNumber;
-    }
-
-    /**
-     * Принимает новое значение переменной ,но приэтом старое значение вызвать с помощью get
-     */
-    public void setAccountNumber(long accountNumber) {
-        this.accountNumber = accountNumber;
+        return moneySender;
     }
 
     /**
      * гетер получает значение переменной(копии)
      */
     public long getClientNumber() {
-        return clientNumber;
-    }
-
-    /**
-     * Принимает новое значение переменной ,но приэтом старое значение вызвать с помощью get
-     */
-    public void setClientNumber(long clientNumber) {
-        this.clientNumber = clientNumber;
+        return moneyRecipient;
     }
 }

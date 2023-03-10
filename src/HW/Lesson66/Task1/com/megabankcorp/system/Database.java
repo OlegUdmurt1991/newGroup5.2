@@ -54,29 +54,30 @@ public abstract class Database {
      * не содержит реализации, просто сигнатура с описанием
      * доступен отовсюду
      */
-    public abstract void deposit(Account account, BigDecimal amount);
+    public abstract void deposit(Account moneyRecipient, BigDecimal balance);
 
     /**
      * снимает указанную сумму с указанного счета
      * не содержит реализации, просто сигнатура с описанием
      * доступен отовсюду
      */
-    public abstract void withdraw(Account account, BigDecimal amount);
+    public abstract void withdraw(Account moneySender, BigDecimal balance);
 
     /**
      * получает значение суммы с указанного счета
      * не содержит реализации, просто сигнатура с описанием
      * доступен только из пакета и реализаций
      */
-    abstract void getAmount(Account account, BigDecimal amount);
+    abstract void getAmount(BigDecimal balance, Account moneySender);
 
     /**
      * передает указанную сумму с одного указанного счета на другой
      * содержит реализацию по умолчанию, использующую методы deposit и withdraw
      * доступен только из пакета
      */
-    void transfer(Account fromAccount, Account toAccount, BigDecimal amount) {
-        withdraw(fromAccount, amount);
-        deposit(toAccount, amount);
+    void transfer(Account moneySender, Account moneyRecipient, BigDecimal balance) {
+        withdraw(moneySender, balance);
+        deposit(moneyRecipient, balance);
+
     }
 }
