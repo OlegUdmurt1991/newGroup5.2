@@ -68,7 +68,7 @@ public abstract class Database {
      * не содержит реализации, просто сигнатура с описанием
      * доступен только из пакета и реализаций
      */
-    protected abstract BigDecimal getAmount(Account account);
+    protected abstract BigDecimal getAmount(Account amount);
 
     /**
      * передает указанную сумму с одного указанного счета на другой
