@@ -7,24 +7,32 @@ import java.util.HashMap;
 import java.util.Map;
 
 class FruitCatalogue {
+    /**
+     * Массив типа Fruit (private-доступ только внутри класса)
+     * (final-после инициализации массива в конструкторе этого класса он не может быть изменен)
+     */
     private final Fruit[] fruits;
 
     public FruitCatalogue() {
-        fruits = new Fruit[] {
-                new Apple(0.1, BigDecimal.valueOf(1.5), "Golden"),
-                new Apple(0.2, BigDecimal.valueOf(2.5), "Granny Smith"),
-                new Orange(0.15, BigDecimal.valueOf(2.0), "Valencia"),
-                new Orange(0.12, BigDecimal.valueOf(1.8), "Navel"),
-                new Banana(0.1, BigDecimal.valueOf(1.0), "Cavendish"),
-                new Banana(0.12, new BigDecimal(1.2), "Lady Finger"),
-                new Pineapple(1.5, new BigDecimal("3.0"), "Queen"),
-                new Pineapple(2.0, new BigDecimal("4.0"), "Red Spanish")
+        /**создаем новый массив объектов типа Fruit и присваеваем его fruits*/
+        fruits = new Fruit[]{
+                /**Заполняем массив*/
+                new Apple(1, BigDecimal.valueOf(2.5), "apple"),
+                new Orange(1, BigDecimal.valueOf(2.4), "orange"),
+                new Banana(1, BigDecimal.valueOf(1.3), "banana"),
+                new Pineapple(1, new BigDecimal("3.0"), "pineapple"),
         };
 
     }
 
+    /**
+     * Метод принимает значение name и сравнивает его с name из списка fruits
+     */
     public Fruit findFruit(String name) {
-        for (Fruit fruit : fruits) {
+        for (int i = 0; i < fruits.length; i++) {
+            /**переменной fruit присваиваем значение из массива fruits с индексом i*/
+            Fruit fruit = fruits[i];
+            /**Сравниваем полученные имена*/
             if (fruit.getName().equalsIgnoreCase(name)) {
                 return fruit;
             }
