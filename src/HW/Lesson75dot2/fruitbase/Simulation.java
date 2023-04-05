@@ -1,11 +1,19 @@
 package HW.Lesson75dot2.fruitbase;
+/*  Также добавим специальный класс Simulation, внутри которого теперь будет выполняться программа.
+    Для этого в него перенесем метод main из Fruitbase и внесем изменения:
+    - после создания объекта FruitBase создается массив покупателей, в который будут входит экземпляры обоих видов
+    покупателей
+    - далее для каждого покупателя:
+        выполняется заказ и формируется груз
+        выводится информации о грузе
+        покупатель выбирает из груза интересующие его фрукты
+        покупатель выводит полученные фрукты
+        выводится информации об оставшемся грузе*/
 
 import HW.Lesson75dot2.fruitbase.customers.Customer;
 import HW.Lesson75dot2.fruitbase.customers.freshCustomer;
-import HW.Lesson75dot2.fruitbase.customers.freshCustomer;
 import HW.Lesson75dot2.fruitbase.customers.uniqueCustomer;
 import HW.Lesson75dot2.fruitbase.fruits.Fruit;
-
 
 import java.util.List;
 

@@ -1,7 +1,20 @@
 package HW.Lesson75dot2.fruitbase.fruits;
-
-import java.math.BigDecimal;
-import java.util.Objects;
+/* - абстрактный класс Fruit
+    находится в пакете com.fruitbase.fruits
+    содержит наследуемое поле вес
+    содержит наследуемое поле цена
+    содержит наследуемое поле name
+    содержит общедоступный метод по-умолчанию для получения значения веса getWeight
+    содержит общедоступный метод по-умолчанию для получения значения цены getPrice
+    содержит общедоступный метод по-умолчанию для получения значения цены getName
+    Для фруктов нужно добавить
+        - внутренний параметр freshness - отражает состояние свежести фрукта;
+          для значений нужно завести enum с как минимум состояниями: FRESH, OVERRIPED, SPOILED
+          при создании объект имеет состояние FRESH
+        - метод equals
+        - метод hashcode
+        - метод isFresh - возвращает true, если параметр freshness имеет состояние FRESH
+    */
 
 import java.math.BigDecimal;
 import java.util.Objects;

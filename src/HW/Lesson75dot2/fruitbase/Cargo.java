@@ -1,10 +1,23 @@
 package HW.Lesson75dot2.fruitbase;
-
+/* - класс Cargo
+    находится в пакете com.fruitbase
+    содержит поле массив Fruit - записи о фруктах, добавленных в груз
+    содержит консткрутор без параметров
+        в нем инициализируется внутренний массив
+    содержит общедоступный метод getWeight - возвращает суммарный вес груза
+    содержит общедоступный метод getPrice - возвращает суммарную цену груза
+    содержит метод addFruit, доступный только в пакете - добавляет Fruit во внутренний массив
+    В класс Cargo надо добавить
+    - общедоступный метод getFruits
+      с его помощью покупатели получают фрукты из груза
+      возвращает список фруктов
+    - общедоступный метод removeFruit
+      получает в качестве параметра фрукт
+      если такого фрукта нет во внутреннем списке, то метод завершается
+      иначе убирает фрукт с указанным названием из внутреннего массива и возвращает его*/
 
 import HW.Lesson75dot2.fruitbase.fruits.Fruit;
 
-import java.math.BigDecimal;
-import java.util.Arrays;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -50,5 +63,4 @@ public class Cargo {
             removedPrice = removedPrice.add(fruit.getPrice());
         }
     }
-
 }
