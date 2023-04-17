@@ -101,6 +101,7 @@ class Fire extends NatureElement {
 
     @Override
     public NatureElement connect(NatureElement element) {
+        //Переменная которой будем присваивать элементы
         NatureElement result = null;
         if (element instanceof Air) {
             result = new Energy("Energy");
@@ -125,6 +126,7 @@ class Air extends NatureElement {
 
     @Override
     public NatureElement connect(NatureElement element) {
+        //Переменная которой будем присваивать элементы
         NatureElement result = null;
         if (element instanceof Fire) {
             result = new Energy("Energy");
@@ -150,6 +152,7 @@ class Earth extends NatureElement {
 
     @Override
     public NatureElement connect(NatureElement element) {
+        //Переменная которой будем присваивать элементы
         NatureElement result = null;
         if (element instanceof Fire) {
             result = new Lava("Lava");
