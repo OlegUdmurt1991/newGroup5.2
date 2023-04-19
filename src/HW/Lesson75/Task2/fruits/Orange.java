@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase.fruits;
+package HW.Lesson75.Task2.fruits;
 /* - классы видов фруктов в пакете с классом Fruit
     находятся в пакете com.fruitbase.fruits
     Apple

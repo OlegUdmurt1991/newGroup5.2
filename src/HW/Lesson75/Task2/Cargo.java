@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase;
+package HW.Lesson75.Task2;
 /* - класс Cargo
     находится в пакете com.fruitbase
     содержит поле массив Fruit - записи о фруктах, добавленных в груз
@@ -16,7 +16,7 @@ package HW.Lesson75dot2.fruitbase;
       если такого фрукта нет во внутреннем списке, то метод завершается
       иначе убирает фрукт с указанным названием из внутреннего массива и возвращает его*/
 
-import HW.Lesson75dot2.fruitbase.fruits.Fruit;
+import HW.Lesson75.Task2.fruits.Fruit;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

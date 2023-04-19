@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase.fruits;
+package HW.Lesson3dot10.second.fruits;
 
 public enum Freshness {
     FRESH,

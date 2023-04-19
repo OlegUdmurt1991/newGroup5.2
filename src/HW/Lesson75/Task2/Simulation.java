@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase;
+package HW.Lesson75.Task2;
 /*  Также добавим специальный класс Simulation, внутри которого теперь будет выполняться программа.
     Для этого в него перенесем метод main из Fruitbase и внесем изменения:
     - после создания объекта FruitBase создается массив покупателей, в который будут входит экземпляры обоих видов
@@ -10,10 +10,10 @@ package HW.Lesson75dot2.fruitbase;
         покупатель выводит полученные фрукты
         выводится информации об оставшемся грузе*/
 
-import HW.Lesson75dot2.fruitbase.customers.Customer;
-import HW.Lesson75dot2.fruitbase.customers.freshCustomer;
-import HW.Lesson75dot2.fruitbase.customers.uniqueCustomer;
-import HW.Lesson75dot2.fruitbase.fruits.Fruit;
+import HW.Lesson75.Task2.customers.freshCustomer;
+import HW.Lesson75.Task2.customers.uniqueCustomer;
+import HW.Lesson75.Task2.customers.Customer;
+import HW.Lesson75.Task2.fruits.Fruit;
 
 import java.util.List;
 

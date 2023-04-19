@@ -1,7 +1,7 @@
-package HW.Lesson75dot2.fruitbase.customers;
+package HW.Lesson3dot10.second.customers;
 
-import HW.Lesson75dot2.fruitbase.Cargo;
-import HW.Lesson75dot2.fruitbase.fruits.Fruit;
+import HW.Lesson3dot10.second.Cargo;
+import HW.Lesson3dot10.second.fruits.Fruit;
 
 import java.util.List;
 

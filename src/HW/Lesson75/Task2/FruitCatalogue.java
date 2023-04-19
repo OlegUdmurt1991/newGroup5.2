@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase;
+package HW.Lesson75.Task2;
 /* - класс FruitCatalogue
     находится в пакете com.fruitbase
     содержит поле массив Fruit - список записей известных фруктов
@@ -7,8 +7,8 @@ package HW.Lesson75dot2.fruitbase;
     содержит метод findFruit, доступный только в пакете
         по переданному слову проверяет есть ли информация о таком фрукте
         если есть, то возвращает Fruit. Если нет, то возвращает null.*/
+import HW.Lesson75.Task2.fruits.*;
 
-import HW.Lesson75dot2.fruitbase.fruits.*;
 
 public class FruitCatalogue {
 

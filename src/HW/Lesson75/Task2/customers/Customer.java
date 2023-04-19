@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase.customers;
+package HW.Lesson75.Task2.customers;
 /* Надо создать новый пакет customers и в нем создать новые классы
     - абстрактный класс Customer
         имеет внутренний массив покупок фруктов purchases (доступен у наследников)
@@ -18,8 +18,8 @@ package HW.Lesson75dot2.fruitbase.customers;
         реалиация метода takeFruits
             отбирает только уникальные фрукты, т.е. те, которых еще нет во внутреннем массиве */
 
-import HW.Lesson75dot2.fruitbase.Cargo;
-import HW.Lesson75dot2.fruitbase.fruits.Fruit;
+import HW.Lesson75.Task2.Cargo;
+import HW.Lesson75.Task2.fruits.Fruit;
 
 import java.util.ArrayList;
 import java.util.List;

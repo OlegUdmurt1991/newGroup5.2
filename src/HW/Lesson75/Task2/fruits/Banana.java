@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase.fruits;
+package HW.Lesson75.Task2.fruits;
 /* - классы видов фруктов в пакете с классом Fruit
     находятся в пакете com.fruitbase.fruits
     Apple
@@ -10,11 +10,11 @@ package HW.Lesson75dot2.fruitbase.fruits;
 
 import java.math.BigDecimal;
 
-public class Apple extends Fruit {
-    public Apple() {
-        name = "Apple";
-        weight = 10.54;
-        price = BigDecimal.valueOf(500);
-        freshness = Freshness.FRESH;
+public class Banana extends Fruit {
+    public Banana() {
+        name = "Banana";
+        weight = 25.8;
+        price = BigDecimal.valueOf(224.40);
+        freshness = Freshness.SPOILED;
     }
 }

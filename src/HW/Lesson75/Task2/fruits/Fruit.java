@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase.fruits;
+package HW.Lesson75.Task2.fruits;
 /* - абстрактный класс Fruit
     находится в пакете com.fruitbase.fruits
     содержит наследуемое поле вес

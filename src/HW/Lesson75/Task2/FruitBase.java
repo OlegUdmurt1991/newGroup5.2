@@ -1,4 +1,4 @@
-package HW.Lesson75dot2.fruitbase;
+package HW.Lesson75.Task2;
 /* - класс FruitBase
     находится в пакете com.fruitbase
     содержит поле FruitCatalogue
@@ -17,7 +17,9 @@ package HW.Lesson75dot2.fruitbase;
             если есть заказ, то он передается в метод takeOrder
             выводим результат*/
 
-import HW.Lesson75dot2.fruitbase.fruits.Fruit;
+import HW.Lesson3dot10.second.fruits.*;
+import HW.Lesson75.Task2.fruits.Fruit;
+
 
 public class FruitBase {
 
