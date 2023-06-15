@@ -28,7 +28,7 @@ public class FruitBase implements Serializable {
      * Метод сериализует и экспортирует (сохраняет файл в ресурсы) каталог фруктов из конкретного объекта фруктовой базы
      */
     public void exportCatalogue() {
-        try (FileOutputStream fileOut = new FileOutputStream("FruitCatalogue.ser")) {
+        try (FileOutputStream fileOut = new FileOutputStream("C:\\Users\\Олег\\IdeaProjects\\newGroup5.2\\FruitCatalog.ser")) {
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(this.fruitCatalogue);
             out.close();
@@ -43,7 +43,7 @@ public class FruitBase implements Serializable {
      * Метод десериализует и импортирует (достаёт файл из рерурсов) значение для переменной catalogue конкретного объекта фруктовой базы
      */
     public void importCatalogue() {
-        try (FileInputStream fileIn = new FileInputStream("FruitCatalogue.ser")) {
+        try (FileInputStream fileIn = new FileInputStream("C:\\Users\\Олег\\IdeaProjects\\newGroup5.2\\FruitCatalog.ser")) {
             ObjectInputStream in = new ObjectInputStream(fileIn);
             this.fruitCatalogue = (FruitCatalogue) in.readObject();
             in.close();
